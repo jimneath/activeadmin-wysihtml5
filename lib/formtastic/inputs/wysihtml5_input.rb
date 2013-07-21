@@ -236,7 +236,6 @@ module Formtastic
             <ul class="tabs">
               <li><a data-tab-handle="1" href="#modal-image-url">#{I18n.t("wysihtml5.dialog.image.url_title")}</a></li>
               <li><a data-tab-handle="1" href="#modal-image-gallery">#{I18n.t("wysihtml5.dialog.image.gallery_title")}</a></li>
-              <li><a data-tab-handle="1" href="#modal-image-upload">#{I18n.t("wysihtml5.dialog.image.upload_title")}</a></li>
             </ul>
             <div data-tab="1" id="modal-image-url">
               <div class="input string">
@@ -259,9 +258,6 @@ module Formtastic
                   <option value="wysiwyg-float-right">#{I18n.t("wysihtml5.dialog.image.right")}</option>
                 </select>
               </div>
-            </div>
-            <div data-tab="1" id="modal-image-upload">
-              <div class="asset-uploader"></div>
             </div>
             <div data-tab="1" id="modal-image-gallery">
               <div class="assets-container">
