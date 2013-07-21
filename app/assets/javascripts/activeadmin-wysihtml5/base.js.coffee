@@ -104,7 +104,7 @@
         refreshAssets = ->
           $gallery.empty()
 
-          $.getJSON '/admin/images.json', (data) ->
+          $.getJSON '/admin/assets.json', (data) ->
             $.each data, (i, asset) ->
               $img = $("<img/>")
               $img.attr
@@ -121,7 +121,7 @@
         initUploader = ->
           uploader = new qq.FileUploader
             element: $uploader.get(0)
-            action: '/admin/images.json'
+            action: '/admin/assets.json'
             multiple: false
             params:
               process_now: true # to bypass the background worker
