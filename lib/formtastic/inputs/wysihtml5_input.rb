@@ -145,7 +145,7 @@ module Formtastic
 
       def toolbar
         template.content_tag(:ul, id: "#{input_html_options[:id]}-toolbar", class: "toolbar") do
-          toolbar_blocks << toolbar_colors << toolbar_commands
+          toolbar_blocks << toolbar_commands
         end << toolbar_dialogs
       end
 
