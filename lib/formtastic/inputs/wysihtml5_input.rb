@@ -276,15 +276,6 @@ module Formtastic
                   <label>#{I18n.t("wysihtml5.dialog.image.title")}</label>
                   <input type="text" name="title" />
                 </div>
-                <div class="input radio">
-                  <div class="asset_scale_selection">
-                    <label>#{I18n.t("wysihtml5.dialog.image.scale")}</label>
-                    <label class="option"><input value="full" type="radio" name="scale" checked="checked" /> 100%</label>
-                    <label class="option"><input value="three_quarters" type="radio" name="scale" /> 75%</label>
-                    <label class="option"><input value="half" type="radio" name="scale" /> 50%</label>
-                    <label class="option"><input value="one_quarter" type="radio" name="scale" /> 25%</label>
-                  </div>
-                </div>
                 <div class="input select">
                   <label>#{I18n.t("wysihtml5.dialog.image.alignment")}</label>
                   <select name="alignment">
