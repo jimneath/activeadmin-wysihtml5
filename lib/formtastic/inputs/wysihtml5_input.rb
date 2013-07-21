@@ -4,7 +4,7 @@ module Formtastic
 
       COMMANDS_PRESET = {
         barebone: [ :bold, :italic, :link, :source ],
-        basic: [ :bold, :italic, :ul, :ol, :link, :image, :source, :undo, :redo ],
+        basic: [ :bold, :italic, :ul, :ol, :link, :image, :source ],
         all: [  :bold, :italic, :underline, :ul, :ol, :outdent, :indent, :link,
                 :image, :source, :center, :left, :right, :undo, :redo ]
       }
