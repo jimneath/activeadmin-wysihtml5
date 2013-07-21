@@ -104,12 +104,11 @@
         refreshAssets = ->
           $gallery.empty()
 
-          $.getJSON '/admin/assets.json', (data) ->
+          $.getJSON '/admin/assets.json?scope=images', (data) ->
             $.each data, (i, asset) ->
               $img = $("<img/>")
               $img.attr
-                # title: "#{asset.dimensions.width}x#{asset.dimensions.height}px"
-                src: asset.thumb_url
+                src: asset.file.thumb.url
               $a = $("<a/>").attr(href: "#").append($img)
               $a.click ->
                 $gallery.find("a").removeClass("selected")
